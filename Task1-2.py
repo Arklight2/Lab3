@@ -71,4 +71,4 @@ except ValueError as e:
 try:
     invalid_pentagon = Pentagon("InvalidPentagon", [(1, 1), (3, 1), (4, 3), (2, 4)])
 except ValueError as e:
-    print(f"Ошибка: {e}"
+    print(f"Ошибка: {e}")
