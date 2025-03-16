@@ -73,15 +73,15 @@ print("Пересекаются ли квадрат и пятиугольник?
 
 quad.move(1, 1)
 print("Вершины квадрата после перемещения:", quad.vertices)
-print("Пересекаются ли квадрат и пятиугольник после перемещения?", quad.is_intersect(pentagon))  # Должно быть False
+print("Пересекаются ли квадрат и пятиугольник после перемещения?", quad.is_intersect(pentagon))
 
 try:
-    invalid_quad = Quad("InvalidQuad", [(0, 0), (2, 0), (2, 2)])  # Ошибка: 3 вершины вместо 4
+    invalid_quad = Quad("InvalidQuad", [(0, 0), (2, 0), (2, 2)])
 except ValueError as e:
     print(f"Ошибка: {e}")
 
 try:
-    invalid_pentagon = Pentagon("InvalidPentagon", [(1, 1), (3, 1), (4, 3), (2, 4)])  # Ошибка: 4 вершины вместо 5
+    invalid_pentagon = Pentagon("InvalidPentagon", [(1, 1), (3, 1), (4, 3), (2, 4)])
 except ValueError as e:
     print(f"Ошибка: {e}")
 
