@@ -96,6 +96,6 @@ except ValueError as e:
 
 try:
     invalid_move = Quad("InvalidMove", [(0, 0), (2, 0), (2, 2), (0, 2)])
-    invalid_move.move("a", 1)  # Ошибка: "a" не число
+    invalid_move.move("a", 1)
 except ValueError as e:
     print(f"Ошибка: {e}")
